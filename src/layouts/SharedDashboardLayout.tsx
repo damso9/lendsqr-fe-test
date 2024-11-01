@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/nav/Navbar';
-import Sidebar from '../components/nav/sidebar/Sidebar';
+import Sidebar from '../components/nav/Sidebar';
 import { useState } from 'react';
 import styles from './SharedDashboardLayout.module.scss';
-import LargeSidebar from '../components/nav/sidebar/LargeSidebar';
+import LargeSidebar from '../components/nav/LargeSidebar';
 
 const SharedDashboardLayout = () => {
   console.log('Rending SharedDashboard Layout');

@@ -1,8 +1,8 @@
 // src/components/filters/DateInput.tsx
 import React from 'react';
 import { Field, ErrorMessage, FieldProps } from 'formik';
-import styles from './DateInput.module.scss';
-import dateIcon from '../../assets/svg-components/dateIcon.svg';
+import styles from './styles/DateInput.module.scss';
+import dateIcon from '../../assets/svg/dateIcon.svg';
 
 interface DateInputProps {
   name: string;

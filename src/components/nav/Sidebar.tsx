@@ -1,9 +1,7 @@
-import styles from './Sidebar.module.scss';
-// import MenuIcon from '@mui/icons-material/Menu';
-import dropdownIcon from '../../../assets/images/dropdownIcon.svg';
-
+import styles from '../nav/styles/Sidebar.module.scss';
+import dropdownIcon from '../../assets/svg/dropdownIcon.svg';
 import { sidebarData } from './data';
-import SwitchOrganization from '../../../assets/svg-components/SwitchOrganization';
+import SwitchOrganization from '../../assets/svg/SwitchOrganization';
 
 interface SidebarProps {
   closeSidebar: () => void;
@@ -13,10 +11,6 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ closeSidebar, openSidebar }) => {
   return (
     <>
-      {/* <div className={styles['sidebar-toggle']} onClick={toggleSidebar}>
-        <MenuIcon fontSize='large' />
-      </div> */}
-
       {openSidebar && (
         <div className={styles['overlay']} onClick={closeSidebar}></div>
       )}

@@ -2,16 +2,16 @@
 import React, { useEffect, useState } from 'react';
 import styles from './UserTable.module.scss';
 // Other imports...
-import { User } from './types';
-import Pagination from './Pagination';
+import { User } from '../../pages/users/types';
+import Pagination from '../pagination/Pagination';
 import FilterListIcon from '@mui/icons-material/FilterList'; // MUI filter icon
 import MoreVertIcon from '@mui/icons-material/MoreVert'; // MUI three-dot icon
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import viewDetailsIcon from '../../assets/images/users/table/viewDetails.svg';
-import blackListIcon from '../../assets/images/users/table/blackListUser.svg';
-import activateUserIcon from '../../assets/images/users/table/activateUser.svg';
-import FilterPopup from '../../components/popover/FilterPopover';
+import viewDetailsIcon from '../../assets/svg/viewDetails.svg';
+import blackListIcon from '../../assets/svg/blackListUser.svg';
+import activateUserIcon from '../../assets/svg/activateUser.svg';
+import FilterPopup from '../popover/FilterPopover';
 
 const UserTable: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -54,8 +54,8 @@ const UserTable: React.FC = () => {
 
   const handleViewDetails = (user: User) => {
     localStorage.setItem('selectedUser', JSON.stringify(user));
-    navigate('/users/details'); 
-    closePopover(); 
+    navigate('/users/details');
+    closePopover();
   };
 
   const handleFilterIconClick = () => {
@@ -66,12 +66,10 @@ const UserTable: React.FC = () => {
     setShowFilterPopup(false);
   };
 
-
-
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        'https://run.mocky.io/v3/52445517-855e-4e0b-9617-db64e30e331e'
+        'https://run.mocky.io/v3/cb17911d-a2b1-48a9-ac3d-f062bb3d83f8'
       ); // Replace with your mock API URL
       setUsers(response.data);
     } catch (error) {
@@ -193,9 +191,7 @@ const UserTable: React.FC = () => {
           </tbody>
         </table>
 
-        {showFilterPopup && (
-          <FilterPopup onClose={closeFilterPopup} />
-        )}
+        {showFilterPopup && <FilterPopup onClose={closeFilterPopup} />}
       </div>
 
       <Pagination

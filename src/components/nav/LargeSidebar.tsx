@@ -1,16 +1,11 @@
-import styles from './LargeSidebar.module.scss';
-// import MenuIcon from '@mui/icons-material/Menu';
-
+import styles from '../nav/styles/LargeSidebar.module.scss';
 import { sidebarData } from './data';
-import dropdownIcon from '../../../assets/images/dropdownIcon.svg';
-import SwitchOrganization from '../../../assets/svg-components/SwitchOrganization';
+import dropdownIcon from '../../assets/svg/dropdownIcon.svg';
+import SwitchOrganization from '../../assets/svg/SwitchOrganization';
 
 const LargeSidebar = () => {
   return (
     <>
-      {/* <div className={styles['sidebar-toggle']} onClick={toggleSidebar}>
-        <MenuIcon fontSize='large' />
-      </div> */}
       <div className={styles['container']}>
         <div className={`${styles['sidebar']} `}>
           <div className={styles['sidebar-header']}>

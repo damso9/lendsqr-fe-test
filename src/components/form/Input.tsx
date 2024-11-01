@@ -1,5 +1,5 @@
 import { ErrorMessage, Field, FieldProps } from 'formik';
-import styles from './Input.module.scss';
+import styles from './styles/Input.module.scss';
 import TextError from './TextError';
 
 interface InputProps {

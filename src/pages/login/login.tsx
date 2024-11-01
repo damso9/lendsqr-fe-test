@@ -1,8 +1,8 @@
-import Input from '../components/form/Input';
-import PasswordInput from '../components/form/PasswordInput';
-import styles from './Login.module.scss';
-import loginImage from '../assets/images/loginImage.svg';
-import lendSqrLogo from '../assets/images/lendSqrLogo.svg';
+import Input from '../../components/form/Input';
+import PasswordInput from '../../components/form/PasswordInput';
+import styles from './login.module.scss';
+import loginImage from '../../assets/svg/loginImage.svg';
+import lendSqrLogo from '../../assets/svg/lendSqrLogo.svg';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
@@ -21,7 +21,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onSubmit = (values: typeof initialValues) => {
-    console.log(values)
+    console.log(values);
     navigate('/users', { state: values });
   };
   return (

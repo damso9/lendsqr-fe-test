@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Pagination.module.scss';
-import { PaginationProps } from './types';
+import { PaginationProps } from '../../pages/users/types';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'; // Added for back arrow
 

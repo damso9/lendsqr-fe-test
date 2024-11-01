@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './TextError.module.scss';
+import styles from './styles/TextError.module.scss';
 
 interface TextErrorProps {
   children: ReactNode | string;

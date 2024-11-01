@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Field, ErrorMessage, FieldProps } from 'formik';
-import styles from './PasswordInput.module.scss';
+import styles from './styles/PasswordInput.module.scss';
 import TextError from './TextError';
 
 interface PasswordInputProps {

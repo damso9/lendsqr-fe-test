@@ -1,8 +1,8 @@
 // src/components/filters/SelectInput.tsx
 import React from 'react';
 import { Field, ErrorMessage, FieldProps } from 'formik';
-import selectDropDown from '../../assets/images/selectDropDown.svg'
-import styles from './SelectInput.module.scss';
+import selectDropDown from '../../assets/svg/selectDropDown.svg';
+import styles from './styles/SelectInput.module.scss';
 
 interface SelectInputProps {
   name: string;

@@ -1,26 +1,26 @@
 // data.tsx
 
-import AuditLogs from '../../../assets/svg-components/auditLogs.svg';
-import Dashboard from '../../../assets/svg-components/dashboard.svg';
-import DecisionModels from '../../../assets/svg-components/decisionModels.svg';
-import FeesAndCharges from '../../../assets/svg-components/feesAndCharges.svg';
-import FeesAndPricing from '../../../assets/svg-components/feesAndPricing.svg';
-import Guarantors from '../../../assets/svg-components/guarantors.svg';
-import Karma from '../../../assets/svg-components/karma.svg';
-import LoanProduct from '../../../assets/svg-components/loanProduct.svg';
-import LoanRequests from '../../../assets/svg-components/loanRequests.svg';
-import Loans from '../../../assets/svg-components/loans.svg';
-import Organization from '../../../assets/svg-components/organization.svg';
-import Preferences from '../../../assets/svg-components/preferences.svg';
-import Reports from '../../../assets/svg-components/reports.svg';
-import Savings from '../../../assets/svg-components/savings.svg';
-import SavingsProduct from '../../../assets/svg-components/savingsProduct.svg';
-import ServiceAccount from '../../../assets/svg-components/serviceAccount.svg';
-import Services from '../../../assets/svg-components/services.svg';
-import Settlements from '../../../assets/svg-components/settlements.svg';
-import Transactions from '../../../assets/svg-components/transactions.svg';
-import Users from '../../../assets/svg-components/users.svg';
-import WhiteList from '../../../assets/svg-components/whitelist.svg';
+import AuditLogs from '../../assets/svg/auditLogs.svg';
+import Dashboard from '../../assets/svg/dashboard.svg';
+import DecisionModels from '../../assets/svg/decisionModels.svg';
+import FeesAndCharges from '../../assets/svg/feesAndCharges.svg';
+import FeesAndPricing from '../../assets/svg/feesAndPricing.svg';
+import Guarantors from '../../assets/svg/guarantors.svg';
+import Karma from '../../assets/svg/karma.svg';
+import LoanProduct from '../../assets/svg/loanProduct.svg';
+import LoanRequests from '../../assets/svg/loanRequests.svg';
+import Loans from '../../assets/svg/loans.svg';
+import Organization from '../../assets/svg/organization.svg';
+import Preferences from '../../assets/svg/preferences.svg';
+import Reports from '../../assets/svg/reports.svg';
+import Savings from '../../assets/svg/savings.svg';
+import SavingsProduct from '../../assets/svg/savingsProduct.svg';
+import ServiceAccount from '../../assets/svg/serviceAccount.svg';
+import Services from '../../assets/svg/services.svg';
+import Settlements from '../../assets/svg/settlements.svg';
+import Transactions from '../../assets/svg/transactions.svg';
+import Users from '../../assets/svg/users.svg';
+import WhiteList from '../../assets/svg/whitelist.svg';
 
 export interface SidebarItem {
   label: string;

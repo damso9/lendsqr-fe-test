@@ -1,7 +1,6 @@
-@use '../styles/_variables' as vars;
+@use '../../styles/variables' as vars;
 
 .container {
-  border: 2px solid red;
   height: 100vh;
   width: 100%;
   .image-section {
@@ -9,19 +8,16 @@
   }
   .form-section {
     height: 100%;
-    border: 2px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     .form-section__container {
-        // background: purple;
       width: 80%;
       position: relative;
-        header {
-            position: absolute;
-            top: -160px;
-            
-        }
+      header {
+        position: absolute;
+        top: -160px;
+      }
       .info {
         max-width: 500px;
 
@@ -57,11 +53,9 @@
       color: #c5c6ca;
       font-size: 14px;
       font-weight: 400;
-      //   letter-spacing: 1.1px;
     }
   }
   .form-control {
-    // border: 2px solid red;
     div {
       margin: 20px 0;
       p {
@@ -95,33 +89,27 @@
   }
 }
 
-//   Media query for responsiveness
-// Media query example for responsiveness
 @media (min-width: 768px) {
   .container {
     display: flex;
     flex-direction: row;
     .image-section {
       background: #fcfcfc;
-      //   background-color: orange;
-
       width: 50%;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      //   position: relative;
 
       .image-section__container {
         background: yellowgreen;
         width: 80%;
-        // min-width: 600px;
+
         height: 337px;
         position: relative;
         header {
           position: absolute;
           top: -160px;
-          // left: 90px;
         }
 
         img {
@@ -133,20 +121,15 @@
     }
     .form-section {
       width: 50%;
-
       background: green;
       background: #ffffff;
       position: relative;
       .form-section__container {
         width: 100%;
         max-width: 400px;
-     header {
-        display: none;
-            
+        header {
+          display: none;
         }
-        // position: absolute;
-        // top: ;
-        // transform: translate(-50%, 50%);
       }
     }
   }

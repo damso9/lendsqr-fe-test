@@ -1,11 +1,11 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import styles from './Navbar.module.scss';
+import styles from '../nav/styles/Navbar.module.scss';
 import SearchIcon from '@mui/icons-material/Search';
-import bellIcon from '../../assets/images/bellIcon.svg';
-import profileIcon from '../../assets/images/profile.png';
+import bellIcon from '../../assets/svg/bellIcon.svg';
+import profileIcon from '../../assets/svg/profile.png';
 import SearchInput from '../form/SearchInput';
 import { useState } from 'react';
-import lendSqrLogo from '../../assets/images/lendSqrLogo.svg';
+import lendSqrLogo from '../../assets/svg/lendSqrLogo.svg';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 

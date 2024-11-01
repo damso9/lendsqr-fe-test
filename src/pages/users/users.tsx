@@ -1,9 +1,9 @@
-import styles from './Users.module.scss';
+import styles from './users.module.scss';
 import usersLogo from '../../assets/images/users/users.svg';
-import activeUsersLogo from '../../assets/images/users/activeUsersLogo.svg';
-import usersWithLoanLogo from '../../assets/images/users/usersWithLoanLogo.svg';
-import usersWithSavingsLogo from '../../assets/images/users/usersWithSavingsLogo.svg';
-import UserTable from './UserTable';
+import activeUsersLogo from '../../assets/svg/activeUsersLogo.svg';
+import usersWithLoanLogo from '../../assets/svg/usersWithLoanLogo.svg';
+import usersWithSavingsLogo from '../../assets/svg//usersWithSavingsLogo.svg';
+import UserTable from '../../components/tables/UserTable';
 const Users = () => {
   const data = [
     { label: 'USERS', value: '2,453', icon: usersLogo },

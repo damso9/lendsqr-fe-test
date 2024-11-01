@@ -1,15 +1,16 @@
 import Rating from '@mui/material/Rating';
-import styles from './UserDetails.module.scss';
-import userDetailsAvatar from '../../assets/images/users/userDetailsAvatar.svg';
+import styles from './user-details.module.scss';
+import userDetailsAvatar from '../../assets/svg/userDetailsAvatar.svg';
+import StarIcon from '@mui/icons-material/Star';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { useEffect, useState } from 'react';
 import { User } from '../users/types';
 import { useNavigate } from 'react-router-dom';
 
 const UserDetails = () => {
   const [user, setUser] = useState<User | null>(null);
-  const [userDetailsTab, setUserDetailsTab] = useState(0)
+  const [userDetailsTab, setUserDetailsTab] = useState(0);
   const navigate = useNavigate();
-
 
   useEffect(() => {
     const storedUser = localStorage.getItem('selectedUser');
@@ -47,7 +48,7 @@ const UserDetails = () => {
             <img src={userDetailsAvatar} alt='User Details Avatar' />
             <div>
               <h3>{user.username}</h3>
-              <p>{user.bvn}</p> {/* Display BVN */}
+              <p>{user.bvn}</p>
             </div>
           </div>
           <div className={styles.divider}></div>
@@ -55,11 +56,19 @@ const UserDetails = () => {
             <span>User's Tier</span>
             <Rating
               name='user-rating'
-              value={3}
-              max={5}
+              value={1}
+              max={3}
               readOnly
               precision={1}
-              emptyIcon={<span style={{ color: '#ccc' }}>☆</span>}
+              icon={
+                <StarIcon fontSize='inherit' style={{ color: '#E9B200' }} />
+              }
+              emptyIcon={
+                <StarBorderIcon
+                  fontSize='inherit'
+                  style={{ color: '#E9B200' }}
+                />
+              }
             />
           </div>
           <div className={styles.divider}></div>
@@ -71,7 +80,6 @@ const UserDetails = () => {
 
         <nav className={styles['user-tabs']}>
           <span
-            
             className={userDetailsTab === 0 ? styles.active : ''}
             onClick={() => {
               setUserDetailsTab(0);
@@ -80,7 +88,6 @@ const UserDetails = () => {
             General Details
           </span>
           <span
-  
             className={userDetailsTab === 1 ? styles.active : ''}
             onClick={() => {
               setUserDetailsTab(1);
@@ -89,7 +96,6 @@ const UserDetails = () => {
             Documents
           </span>
           <span
-          
             className={userDetailsTab === 2 ? styles.active : ''}
             onClick={() => {
               setUserDetailsTab(2);
@@ -98,7 +104,6 @@ const UserDetails = () => {
             Bank Details
           </span>
           <span
-        
             className={userDetailsTab === 3 ? styles.active : ''}
             onClick={() => {
               setUserDetailsTab(3);
@@ -107,7 +112,6 @@ const UserDetails = () => {
             Loans
           </span>
           <span
-       
             className={userDetailsTab === 4 ? styles.active : ''}
             onClick={() => {
               setUserDetailsTab(4);
@@ -116,7 +120,6 @@ const UserDetails = () => {
             Savings
           </span>
           <span
-            
             className={userDetailsTab === 5 ? styles.active : ''}
             onClick={() => {
               setUserDetailsTab(5);

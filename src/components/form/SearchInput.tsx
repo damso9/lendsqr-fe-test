@@ -2,7 +2,7 @@ import React, { FC, InputHTMLAttributes } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import TuneIcon from '@mui/icons-material/Tune';
 import ClearIcon from '@mui/icons-material/Clear';
-import styles from './/SearchInput.module.scss';
+import styles from './styles/SearchInput.module.scss';
 
 interface SearchInputProps extends InputHTMLAttributes<HTMLInputElement> {
   onClear?: () => void;

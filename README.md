@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# Lendsqr Frontend Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend implementation for the Lendsqr assessment. The goal of this project was to build a pixel-perfect, responsive web app that adheres closely to the provided Figma design and meets high standards in code quality, best practices, and Git documentation.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Overview
 
-- Configure the top-level `parserOptions` property like this:
+This project showcases the frontend skills required for a high-quality, production-ready web application. It focuses on delivering an exact visual fidelity to the Figma design, robust code structure, responsive layout, and clean documentation.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Pixel-perfect representation of the design
+- Fully responsive layout for all screen sizes
+- Error handling and form validation
+- Positive and negative scenario testing
+- GitHub documentation for smooth code review
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Technologies Used
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project leverages the following technologies, each selected for its specific strengths to achieve the requirements:
+
+### 1. **React** - Core UI Library
+   - Used to build the user interface in a component-based architecture, enabling reusable, testable, and maintainable code.
+
+### 2. **TypeScript** - Static Typing
+   - Ensures type safety and reduces potential runtime errors, making the codebase more reliable and easier to debug.
+
+### 3. **Material-UI (MUI)** - Component Library
+   - Provides pre-styled components that maintain design consistency and speed up development. This includes buttons, inputs, grids, and layouts to closely mirror the Figma design.
+
+### 4. **Formik & Yup** - Form Handling and Validation
+   - Formik manages form state and submission, while Yup provides schema-based form validation. Together, they offer a smooth experience for handling complex form inputs and validation rules.
+
+### 5. **React Router** - Client-Side Routing
+   - Manages page navigation without full page reloads, ensuring a smooth and responsive single-page application experience.
+
+### 6. **Jest & React Testing Library** - Unit Testing
+   - Ensures reliable, bug-free code by testing components for positive and negative scenarios, focusing on component behavior and user interactions.
+
+### 7. **React Query** - Data Fetching
+   - Handles server state management, API data fetching, caching, and synchronization to streamline data flow and avoid redundant requests.
+
+### 8. **Sass** - Preprocessor for CSS
+   - Provides advanced styling capabilities, including nested styles and variables, for scalable and maintainable stylesheets that adhere to best practices in design.
+
+---
+
+## Installation and Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/lendsqr-fe-test.git
+   cd lendsqr-fe-test
