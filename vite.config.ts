@@ -14,9 +14,4 @@ export default defineConfig({
       ],
     }),
   ],
-  test: {
-    globals: true, // Use global test functions like 'describe' and 'it'
-    environment: 'jsdom', // This simulates a browser environment
-    setupFiles: './src/setupTests.ts', // Path to your setup file
-  },
 });
