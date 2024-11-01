@@ -1,0 +1,260 @@
+@use '../../styles/variables' as vars;
+
+@mixin detail-row-style($max-width:200px) {
+  display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+
+      div {
+        flex: 1 1 $max-width;
+        max-width: $max-width;
+
+        span {
+          display: block;
+          font-size: 12px;
+          color: vars.$text-color;
+          text-transform: uppercase;
+          margin: 5px 0px;
+          font-weight: 400;
+        }
+
+        p {
+          font-size: 16px;
+          margin: 0;
+          font-weight: 500;
+          color: vars.$text-color;
+        }
+      }
+
+}
+
+.user-details {
+  font-family: 'Work Sans', sans-serif;
+  color: vars.$text-color;
+  // border: 2px solid red;
+
+  .divider-hr {
+    margin-top: 40px;
+    width: 100%;
+    height: 1px;
+    // color: green;
+    background-color: vars.$active-text-color;
+    opacity: 0.2;
+  }
+  #last-hr {
+    margin-bottom: 50px;
+  }
+
+  &__header {
+    .back-btn {
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .nav-detail {
+      // border: 2px solid yellow;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
+      align-items: center;
+
+      // border: 2px solid red;
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        border-radius: 8px;
+        border: 2px solid;
+
+        letter-spacing: 3px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &.blacklist-button {
+          color: #e4033b;
+          border-color: #e4033b;
+          &:hover {
+            background-color: #d9534f;
+            color: #fff;
+          }
+        }
+
+        &.btn-success {
+          color: #39cdcc;
+          border-color: #39cdcc;
+          &:hover {
+            background-color: #5bc0de;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .user-summary {
+    // border: 2px solid pink;
+
+    position: relative;
+    box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.04);
+    margin-bottom: 3rem;
+    // background: pink;
+    background-color: white;
+
+    border-radius: 4px;
+
+    .user-summary-details {
+      // background-color: blue;
+
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 2rem;
+      background-color: white;
+      margin-bottom: 1.5rem;
+      // border: 2px solid yellowgreen;
+      padding: 20px;
+      padding-bottom: 0px;
+      overflow-y: scroll;
+
+      .profile {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        h3 {
+          color: vars.$active-text-color;
+          font-weight: 500;
+          font-family: 'Work Sans', sans-serif;
+          margin-bottom: 5px;
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .divider {
+        height: 80px;
+        background-color: #ccc;
+      }
+
+      .tier,
+      .account {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        h3 {
+          color: vars.$active-text-color;
+          size: 22px;
+          font-weight: 500;
+          font-family: 'Work Sans', sans-serif;
+        }
+        p {
+          color: vars.$active-text-color;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: 'Work Sans', sans-serif;
+        }
+
+        span {
+          font-size: 0.8rem;
+          color: vars.$active-text-color;
+        }
+
+        .MuiRating-iconFilled {
+          color: #ffd700 !important;
+        }
+
+        .MuiRating-iconEmpty {
+          color: #ccc !important;
+        }
+      }
+    }
+  }
+
+  .user-tabs {
+    display: flex;
+    gap: 2rem;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    overflow-y: scroll;
+
+    span {
+      color: #666;
+      text-decoration: none;
+      font-size: 1rem;
+      text-align: center;
+      position: relative;
+      min-width: 100px;
+      padding: 10px 0;
+
+      &.active {
+        color: vars.$primary-color;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -10px; // Adjust to align with the tab container border
+          left: 50%;
+          transform: translateX(-50%);
+          height: 4px;
+          width: 120%;
+          overflow: hidden;
+          background-color: vars.$primary-color;
+          transition: width 0.3s ease;
+        }
+      }
+      outline: none;
+
+      &:hover {
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .details-section {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 3px 5px 20px 0 rgba(0, 0, 0, 0.04);
+
+    h4 {
+      font-size: 16px;
+      color: vars.$active-text-color;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .detail-row {
+      @include detail-row-style()
+    }
+    .detail-row-2 {
+      @include detail-row-style(250px)
+    }
+  }
+}

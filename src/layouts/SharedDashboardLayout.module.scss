@@ -1,0 +1,34 @@
+.dashboardLayout {
+  .sidebar {
+    display: none;
+  }
+  .mainContent {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .dashboardLayout {
+    display: grid;
+    height: calc(100vh - 68px);
+
+    background: #fbfbfb;
+    // The Sidebar width  and main content area grid template setting
+    grid-template-columns: 260px 1fr;
+
+    .sidebar {
+      background-color: #f8f9fa;
+      border-right: 1px solid #e0e0e0;
+      display: block;
+    }
+
+    .mainContent {
+      padding: 40px;
+    }
+  }
+}
+@media (min-width: 900px) {
+  .dashboardLayout {
+    grid-template-columns: 283px 1fr;
+  }
+}

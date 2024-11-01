@@ -1,0 +1,153 @@
+@use '../../styles/variables' as vars;
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: scroll;
+  position: relative;
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+
+    }
+    td {
+      color: vars.$text-color;
+      font-size: 14px;
+      font-family: vars.$font-stack;
+      font-weight: 400;
+    }
+    th {
+      div {
+        // border: 2px sold red;
+        // background: blue;
+        color: vars.$text-color;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        gap: 10px;
+        min-width: 180px;
+        font-family: vars.$font-stack;
+        #phone-number {
+          min-width: 0px;
+          //   border: 2px solid green;
+        }
+        span {
+            // border: 2px solid red;
+          padding: 0;
+        
+        //   margin-top: 30px;
+        }
+      }
+      #phone-number {
+        min-width: 180px;
+        // border: 2px solid green;
+      }
+      #status {
+        min-width: 0px;
+        // border: 2px solid green;
+      }
+      #username {
+        min-width: 0px;
+        // border: 2px sol  id green;
+      }
+      #organization {
+        min-width: 100px;
+        // border: 2px solid green;
+      }
+      #date-joined {
+        min-width: 130px;
+        // border: 2px solid green;
+      }
+    }
+  }
+
+  .status {
+    padding: 6px 12px;
+    border-radius: 100px;
+font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    font-family: vars.$font-stack;
+
+    &.active {
+      background-color: #f3fcf6;
+      color: #39CD62;
+    }
+    &.inactive {
+      background-color: #f5f5f7;
+      color: #545F7D;
+    }
+    &.blacklisted {
+      background-color: #fce6eb;
+      color: #E4033B;
+    }
+    &.pending {
+      background-color: #fdf8e4;
+      color: #E9B200;
+    }
+  }
+  .actionColumn {
+    position: relative; /* To position the popover correctly */
+  }
+
+  .moreOptions {
+    position: relative;
+  }
+
+  .moreVertIcon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .popover {
+    position: absolute;
+    top: 24px; /* Position below the icon */
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    width: 160px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 14px 20px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    //   border:2px solid red;
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+    }
+
+    // li:first-child {
+    //   border-bottom: 1px solid #e0e0e0;
+    // }
+  }
+}

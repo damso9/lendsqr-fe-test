@@ -1,0 +1,24 @@
+// src/components/filters/FilterPopover.module.scss
+
+.popup {
+  width: 270px;
+  padding: 20px;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border:1px solid rgba(84, 95, 125, 0.14);
+  position: absolute; /* Position absolute to keep it within UserTable */
+  top: 12%; /* Align to the top */
+  left: 20px; /* Align to the left */
+  z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 20px;
+}
+
+

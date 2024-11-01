@@ -1,0 +1,80 @@
+@use '../../styles/variables' as vars;
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4a4a4a;
+  
+
+}
+
+.itemsPerPage {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  select {
+    padding: 4px 8px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+}
+
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 4px;
+  //   border: 2px solid red;
+
+  button {
+    padding: 6px 12px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgba(84, 95, 125, 0.4);
+
+    // border: 2px solid red;
+
+    &.active {
+      font-weight: bold;
+      color: vars.$text-color;
+      font-family: vars.$font-stack;
+      font-weight: 500;
+    }
+
+    &:hover:not(.active) {
+      text-decoration: underline;
+    }
+  }
+
+  .arrowButton {
+    font-size: 18px;
+    color: #4a4a4a;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+    border: 2px solid transparent;
+    background-color: #213f7d1a;
+    border-radius: 4px;
+
+    &:disabled {
+      color: #c4c4c4;
+      cursor: default;
+    }
+  }
+
+  .ellipsis {
+    padding: 6px 8px;
+    color: #6c757d;
+  }
+}

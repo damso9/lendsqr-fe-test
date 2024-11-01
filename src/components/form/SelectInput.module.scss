@@ -1,0 +1,47 @@
+@use '../../styles/variables' as vars;
+
+.fieldContainer {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #4a4a6a;
+  margin-bottom: 4px;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectField {
+  width: 100%;
+  padding: 10px 20px 10px 10px;
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  color: #4a4a6a;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    border-color: vars.$primary-color;
+  }
+}
+
+.selectIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #4a4a6a;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-top: 4px;
+}

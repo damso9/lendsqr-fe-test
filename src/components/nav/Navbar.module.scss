@@ -1,0 +1,219 @@
+@use '../../styles/variables' as vars;
+
+nav {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 3px 0px 20px 0px #0000000a;
+  padding: 10px 5px;
+  .icon-button__container {
+    .icon-button {
+      color: vars.$primary-color;
+      border: 2px solid black;
+      padding: 12px;
+      border: 2px solid vars.$primary-color;
+
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, transform 0.2s;
+      &:hover {
+        background-color: #32b1b1;
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+  .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width: 40%;
+    flex-direction: row;
+    // border: 2px solid red;
+    gap: 20px;
+    img {
+      height: 50px;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 16px;
+      text-decoration: underline;
+      color: #213f7d;
+      font-weight: 500;
+      font-family: 'Work Sans', sans-serif;
+
+    }
+
+    .profile-info {
+      p,
+      button {
+        display: none;
+      }
+      #username {
+        text-decoration: none;
+        font-size: 16px;
+      }
+    }
+    #bell {
+      height: 30px;
+    }
+
+  }
+  .search-bar {
+    display: none;
+  }
+  .search-input {
+    position: absolute;
+    border: 2px solid green;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 0px 25px;
+    border-radius: 12px;
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+}
+
+/* Media query for min-width */
+@media (min-width: 768px) {
+  nav {
+    padding: 10px;
+    .icon-button__container {
+      display: none;
+    }
+    .lendsqr-container {
+      img {
+        height: 30px;
+      }
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      overflow: hidden;
+
+      width: 100%;
+      height: 40px;
+      max-width: 400px;
+      background-color: #fff;
+      input {
+        flex: 1;
+        border: none;
+        padding: 12px 16px;
+        font-size: 16px;
+        color: #667085;
+        outline: none;
+
+        &::placeholder {
+          color: #b0b0b0;
+        }
+      }
+      button {
+        background-color: #39cdcc;
+        border: none;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: #249ea8;
+        }
+      }
+    }
+    .search-input {
+      display: none;
+    }
+    .personal-info {
+      .profile-info {
+        display: flex;
+        // border: 2px solid red;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        p {
+          display: inline;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #213f7d;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Media query for min-width */
+@media (min-width: 1000px) {
+  nav {
+    padding: 10px 40px;
+    .icon-button__container {
+      display: none;
+    }
+    .lendsqr-container {
+      img {
+        height: 30px;
+      }
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-right: 300px;
+
+      width: 100%;
+      height: 40px;
+      max-width: 400px;
+      background-color: #fff;
+      input {
+        flex: 1;
+        border: none;
+        padding: 12px 16px;
+        font-size: 16px;
+        color: #667085;
+        outline: none;
+
+        &::placeholder {
+          color: #b0b0b0;
+        }
+      }
+      button {
+        background-color: #39cdcc;
+        border: none;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: #249ea8;
+        }
+      }
+    }
+    .search-input {
+      display: none;
+    }
+  }
+}
