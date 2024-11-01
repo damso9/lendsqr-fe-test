@@ -3,9 +3,7 @@
 main {
   height: 100%;
   overflow: scroll;
-  // border: 2px solid green;
   .user-info {
-    // height: 1000px;
     h2 {
       font-size: 24px;
       margin-bottom: 20px;
@@ -17,14 +15,12 @@ main {
   .user-info__card-container {
     display: flex;
     min-width: 100%;
-    // flex-wrap: wrap ;
     width: 100%;
-    // border: 2px solid red;
     overflow-x: scroll;
     padding: 10px;
     scroll-snap-type: x mandatory;
     &::-webkit-scrollbar {
-      display: none; // Hide scrollbar on Webkit browsers
+      display: none; 
     }
 
     .user-info__card {
@@ -48,7 +44,6 @@ main {
       margin: 0 10px;
     
       padding: 30px 30px;
-    //   border: 2px solid green;
     // 
       gap: 10px;
       #icon {
@@ -70,7 +65,6 @@ main {
         line-height: 28px;
 
         color: vars.$active-text-color;
-        // color: blue;
       }
     }
   }

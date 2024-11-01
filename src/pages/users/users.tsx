@@ -1,4 +1,4 @@
-import styles from './users.module.scss';
+import styles from '../users/users.module.scss';
 import usersLogo from '../../assets/images/users/users.svg';
 import activeUsersLogo from '../../assets/svg/activeUsersLogo.svg';
 import usersWithLoanLogo from '../../assets/svg/usersWithLoanLogo.svg';

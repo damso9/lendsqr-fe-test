@@ -37,9 +37,9 @@ This project leverages the following technologies, each selected for its specifi
 ### 2. **TypeScript** - Static Typing
    - Ensures type safety and reduces potential runtime errors, making the codebase more reliable and easier to debug.
 
-### 3. **Material-UI (MUI)** - Component Library
-   - Provides pre-styled components that maintain design consistency and speed up development. This includes buttons, inputs, grids, and layouts to closely mirror the Figma design.
-
+### 3. **Material-UI (MUI) ICONS** - Component Library
+   - Provides very robust Icon component with a Robust ecosystem to support it.
+   
 ### 4. **Formik & Yup** - Form Handling and Validation
    - Formik manages form state and submission, while Yup provides schema-based form validation. Together, they offer a smooth experience for handling complex form inputs and validation rules.
 
@@ -48,9 +48,6 @@ This project leverages the following technologies, each selected for its specifi
 
 ### 6. **Jest & React Testing Library** - Unit Testing
    - Ensures reliable, bug-free code by testing components for positive and negative scenarios, focusing on component behavior and user interactions.
-
-### 7. **React Query** - Data Fetching
-   - Handles server state management, API data fetching, caching, and synchronization to streamline data flow and avoid redundant requests.
 
 ### 8. **Sass** - Preprocessor for CSS
    - Provides advanced styling capabilities, including nested styles and variables, for scalable and maintainable stylesheets that adhere to best practices in design.
@@ -63,3 +60,12 @@ This project leverages the following technologies, each selected for its specifi
    ```bash
    git clone https://github.com/yourusername/lendsqr-fe-test.git
    cd lendsqr-fe-test
+
+
+First install all dependencies using npm install
+ > ```npm install ```
+ >
+Start the application using
+> ```npm run dev ```
+
+>

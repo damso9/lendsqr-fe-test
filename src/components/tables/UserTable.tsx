@@ -69,7 +69,7 @@ const UserTable: React.FC = () => {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        'https://run.mocky.io/v3/cb17911d-a2b1-48a9-ac3d-f062bb3d83f8'
+        'https://run.mocky.io/v3/31556d50-b577-4737-9a42-a7a28a657be2'
       ); // Replace with your mock API URL
       setUsers(response.data);
     } catch (error) {
