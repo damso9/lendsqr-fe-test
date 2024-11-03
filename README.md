@@ -58,7 +58,7 @@ This project leverages the following technologies, each selected for its specifi
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/lendsqr-fe-test.git
+   git clone https://github.com/damso9/lendsqr-fe-test.git
    cd lendsqr-fe-test
 
 
